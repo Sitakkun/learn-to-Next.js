@@ -1,15 +1,17 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import Meta from '../components/Meta'
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
+  <>
+    <Meta 
+      title="Next.js + TypeScriptのテスト"
+      description="Next.js + TypeScriptのテストプロジェクトです。"
+      url="https://localhost:3000"
+    />
+    <h1>Next.js + TypeScriptのテストプロジェクトです。</h1>
     <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
+      Next.js + TypeScriptのテストプロジェクトです。
     </p>
-  </Layout>
+  </>
 )
 
 export default IndexPage
